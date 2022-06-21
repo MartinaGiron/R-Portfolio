@@ -1,2 +1,2 @@
 # R-Portfolio
-This is my personal portfolio of analyses written with 
+This is my personal portfolio of analyses written with R
