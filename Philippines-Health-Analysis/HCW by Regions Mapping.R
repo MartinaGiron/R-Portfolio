@@ -27,5 +27,5 @@ tm_shape(ph_doctors) +
   tm_borders() +
   tm_legend(position = c("left", "top"), legend.outside=TRUE) +
   tm_credits("Source: PSA, DOH", position = c("left", "bottom")) +
-  tm_layout(main.title = "Number of Doctors per Region (2015)",
+  tm_layout(main.title = "Number of Government Doctors per Region (2015)",
             main.title.position = "center")
