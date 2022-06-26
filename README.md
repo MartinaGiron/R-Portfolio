@@ -1,2 +1,3 @@
 # R-Portfolio
-This is my personal portfolio of analyses written with R and jupyter notebook.
+My personal portfolio of analyses written with R and jupyter notebook.
+See each folder for the description of each project.
