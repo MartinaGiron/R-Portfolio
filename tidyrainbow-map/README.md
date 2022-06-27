@@ -1,5 +1,5 @@
 # Description
- - `lgbt analysis.R` - Code creating the map of "% of Lesbians who Personally Felt Discriminated Against or Harassed on the Grounds of Gender in Europe"
+	- `lgbt analysis.R` - Code creating the map of "% of Lesbians who Personally Felt Discriminated Against or Harassed on the Grounds of Gender in Europe"
  - `output`- contains exported plots saved as .png 
 
 ## R Contents
