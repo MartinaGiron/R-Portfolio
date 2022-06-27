@@ -36,8 +36,6 @@ dis_perc_lesbian <- dis_perc_lesbian %>%
 a <- merge(world, dis_perc_lesbian, by.x = "SOVEREIGNT",  by.y = "CountryCode") 
 
 
-########## Data Wrangling  ######################
-
 # Specifying the palette (based on the pink of the lesbian flag)
 
 les_pal <- c("#d6d6d6", "#d462a6", "#a40062")
