@@ -1,16 +1,16 @@
 # Description
-	- `lgbt analysis.R` - Code creating the map of "% of Lesbians who Personally Felt Discriminated Against or Harassed on the Grounds of Gender in Europe"
-	- `output`- contains exported plots saved as .png 
+ - `lgbt analysis.R` - Code creating the map of "% of Lesbians who Personally Felt Discriminated Against or Harassed on the Grounds of Gender in Europe"
+ - `output`- contains exported plots saved as .png 
 
 ## R Contents
 1. Data Cleaning
-		- Reading in the data and sf file
+ - Reading in the data and sf file
 2. Data Wrangling and Preparation
-		- Filtering out the data to be mapped
-		- Specifying palettes and countries included
+ - Filtering out the data to be mapped
+ - Specifying palettes and countries included
 3. Graphing
-		a. Map
-		b. Bar Chart
+ a. Map
+ b. Bar Chart
 
 
 ## Tools
