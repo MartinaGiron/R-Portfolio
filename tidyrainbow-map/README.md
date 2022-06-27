@@ -9,8 +9,8 @@
  - Filtering out the data to be mapped
  - Specifying palettes and countries included
 3. Graphing
- a. Map
- b. Bar Chart
+ - Map
+ - Bar Chart
 
 
 ## Tools
