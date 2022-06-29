@@ -1,6 +1,6 @@
 # R-Portfolio
 My personal portfolio of analyses written with R and jupyter notebook.
-See each folder for the description of each project.
+
 
 # Table of Contents
 1. `Soccer Analysis ` - Analyzing Soccer Matches from the 2018-2019 English Premier League 
