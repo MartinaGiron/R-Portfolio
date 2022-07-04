@@ -11,11 +11,11 @@
 
 ## Tools
  - Packages: tidyverse, sf, gganimate, png, gifski, extrafont
- - (flixier)[https://editor.flixier.com/] for combining the .gif files and saving them as a video
+ - [flixier](https://editor.flixier.com/) for combining the .gif files and saving them as a video
 
 
 # Data Sources
- - (World Bank Group Climate Change Knowledge Portal)[https://climateknowledgeportal.worldbank.org/download-data]
+ - [World Bank Group Climate Change Knowledge Portal](https://climateknowledgeportal.worldbank.org/download-data)
    - Chooose the following options
      - `Tab` - Timeseries
      - `Collection` - CRU (Observed)
@@ -27,7 +27,7 @@
 
 
 # References
-1. (Circular Barplot)[https://r-graph-gallery.com/circular-barplot.html]
-2. (Building an animation step-by-step with gganimate)[https://www.alexcookson.com/post/2020-10-18-building-an-animation-step-by-step-with-gganimate/]
+1. [Circular Barplot](https://r-graph-gallery.com/circular-barplot.html)
+2. [Building an animation step-by-step with gganimate](https://www.alexcookson.com/post/2020-10-18-building-an-animation-step-by-step-with-gganimate/)
 
-Project Inspired by (@anttilip)[https://twitter.com/anttilip/status/1542192214016724996] on Twitter
+Project Inspired by [@anttilip](https://twitter.com/anttilip/status/1542192214016724996) on Twitter
