@@ -1,3 +1,5 @@
+![Map and Chart of Combined Image](https://user-images.githubusercontent.com/107832818/177308923-72a4a081-bd2a-4477-9388-17168714c7c2.png)
+
 # Description
  - `lgbt analysis.R` - Code creating the map of "% of Lesbians who Personally Felt Discriminated Against or Harassed on the Grounds of Gender in Europe"
  - `output`- contains exported plots saved as .png 
