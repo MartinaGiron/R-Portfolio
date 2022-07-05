@@ -7,10 +7,10 @@
 
 ## R Contents
 1. Data Wrangling
-  - Reading in the data and sf file
+   - Reading in the data and sf file
 2. Graphing
-  - Circular Bar Graph
-  - Line Graph
+   - Circular Bar Graph
+   - Line Graph
 
 
 ## Tools
