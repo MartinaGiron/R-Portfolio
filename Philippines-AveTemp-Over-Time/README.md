@@ -1,5 +1,9 @@
 # Description
  - `PH Temp Animation.R` - Code creating the .gif of Average Temperature Change Over Time in the Philippines
+ - `output`
+  - `PH Temp by Region.gif` - animation of circular bar graph
+  - `PH Ave Over Time.gif` - animation of line graph
+  - `Final Animation.mp4` - animation of circular bar graph stacked on top of the line graph
 
 ## R Contents
 1. Data Wrangling
