@@ -1,4 +1,5 @@
-https://github.com/MartinaGiron/R-Portfolio/blob/main/Philippines-AveTemp-Over-Time/output/Final%20Animation.mp4
+https://user-images.githubusercontent.com/107832818/177308739-bb1b3244-b395-4ff1-81bc-b0ba7d435fda.mp4
+
 
 # Description
  - `PH Temp Animation.R` - Code creating the .gif of Average Temperature Change Over Time in the Philippines
