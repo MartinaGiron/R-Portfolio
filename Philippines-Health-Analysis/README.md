@@ -6,7 +6,7 @@
   - Filtering regional data
   - Tools: tidyverse, here, readxl
 
- - `HCW by Regions Mapping.R`
+- `HCW by Regions Mapping.R`
   - Mapping number of government doctors per region
   - Tools: tidyverse, sf, tmap, viridis, here
 
