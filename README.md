@@ -8,3 +8,4 @@ My personal portfolio of analyses written with R and jupyter notebook.
 3. `Philippines-Health-Analysis` - Situating the Healthcare Status of the Philippines
    - `Data Cleaning and Joining` - Cleaning and Joining data collected from the Philippine Statistical Authority 
    - `HCW by Regions Mapping` - Mapping number of government doctors per region
+4. `Philippines-AveTemp-Over-Time` - Animating the Average Temperature Change Over Time in the Philippines (overall and by region)
