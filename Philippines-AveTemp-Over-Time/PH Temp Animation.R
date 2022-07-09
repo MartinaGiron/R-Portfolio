@@ -1,7 +1,7 @@
 library(tidyverse)
 library(gganimate)
 library(png)
-library(gifski)
+library(av)
 
 # You may have to include the following lines if you have not initialized custom fonts in r
 ## library(extrafont) 
@@ -66,14 +66,15 @@ circle_static <- ggplot(ph_temp, aes(x = region, y=diff)) +
     axis.text.y = element_blank(), #No y-axis label
     axis.title = element_blank(),  #No axes titles
     panel.grid = element_blank(), #No grid lines
-    plot.title = element_text(family = "Open Sans", face = "bold", size = 20, hjust = 0.7), #custom font and font sizes
-    legend.title = element_text(family = "Arial", size = 10), #custom font and font sizes
-    plot.margin = unit(c(0.2,0.2,0.2,0.2), "cm") #plot margin sizes
+    plot.title = element_text(family = "Open Sans", face = "bold", size = 40, hjust = 0.5), #custom font and font sizes
+    legend.title = element_text(family = "Arial", size = 20), #custom font and font sizes
+    plot.margin = unit(c(0.2,0.2,0.2,0.2), "cm"), #plot margin sizes
+    legend.text = element_text(family = "Arial", size = 15)
   ) +
-  geom_text(data = ph_temp, aes(y = 1.9, label = region), family = "Open Sans", size = 5) + #region labels
+  geom_text(data = ph_temp, aes(y = 1.9, label = region), family = "Open Sans", size = 10) + #region labels
   scale_fill_gradientn(colors = red_blue) + #bar colors using color palette
   coord_polar(start = 0) + #make the bar graph into a circle graph
-  geom_text(aes(x = 0, y = -2, label = year), family = "Hussar Nova", size = 5) +  #year in center of circle
+  geom_text(aes(x = 0, y = -2, label = year), family = "Hussar Nova", size = 10) +  #year in center of circle
   labs(title = "How has the average temperature in the Philippines \nchanged in the last 100 years?",
        fill = "Difference with \nAve. Temp. in 1910") #plot and legend titles
 
@@ -89,9 +90,10 @@ circle_anim <- circle_static + transition_states(year) #animate the plot over ye
 #save the animated plot
 circle_temp <- animate(circle_anim, fps = 10, duration = 32, 
                        end_pause = 50, #put a pause before gif looping
-                       height = 800, width = 800, #set plot size
-                       renderer = gifski_renderer("PH Temp by Region.gif")) #export plot
+                       height = 1600, width = 1600, #set plot size
+                       renderer = av_renderer()) #export plot
 
+anim_save("Ph Temp by Region.mp4", circle_temp)
 
 # Creating the Line Graph
 
@@ -103,8 +105,10 @@ ph_ave_years <- ph_temp %>%
   theme_minimal() + 
   theme(
     panel.grid = element_blank(), #remove grid background
-    plot.title = element_text(family = "Open Sans", face = "bold"),
-    text = element_text(family = "Open Sans") #use custom font
+    plot.title = element_text(family = "Open Sans", face = "bold", size = 20),
+    text = element_text(family = "Open Sans"), #use custom font
+    axis.text = element_text(size = 15),
+    axis.title = element_text(size = 20)
   ) +
   labs(x = "Year", y = "Temperature (C)", title = 
          "Overall Average Temperature in the Philippines") + #plot labels and titles
@@ -116,9 +120,9 @@ ph_ave_years <- ph_temp %>%
 animate_years <- ph_ave_years + transition_reveal(year) #animate the line graph
 
 time_temp <- animate(animate_years, #save and export the line graph
-        width = 800, height = 200, 
+        width = 1600, height = 400, 
         fps = 10, duration = 32,
         end_pause = 50, 
-        renderer = gifski_renderer("PH Ave Over Time.gif"))
+        renderer = av_renderer())
 
-
+anim_save("Ph Ave Temp Over Time.mp4", time_temp)
