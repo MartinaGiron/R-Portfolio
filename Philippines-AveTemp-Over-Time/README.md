@@ -1,4 +1,6 @@
-https://user-images.githubusercontent.com/107832818/177308739-bb1b3244-b395-4ff1-81bc-b0ba7d435fda.mp4
+Uploading Final Animation.mp4…
+
+
 
 
 # Description
@@ -18,7 +20,7 @@ https://user-images.githubusercontent.com/107832818/177308739-bb1b3244-b395-4ff1
 
 ## Tools
  - Packages: tidyverse, sf, gganimate, png, gifski, extrafont
- - [flixier](https://editor.flixier.com/) for combining the .gif files and saving them as a video
+ - Filmora for layout
 
 
 # Data Sources
