@@ -9,3 +9,4 @@ My personal portfolio of analyses written with R and jupyter notebook.
    - `Data Cleaning and Joining` - Cleaning and Joining data collected from the Philippine Statistical Authority 
    - `HCW by Regions Mapping` - Mapping number of government doctors per region
 4. `Philippines-AveTemp-Over-Time` - Animating the Average Temperature Change Over Time in the Philippines (overall and by region)
+5. `PH-Meat-Prices` - Animating the - Animating the Prices of Meat and Fish in NCR, Philippines since 2008.
