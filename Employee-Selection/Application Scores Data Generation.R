@@ -2,7 +2,6 @@ library(MASS)
 library(tidyverse)
 library(writexl)
 
-setwd("D:\\OneDrive - University of the Philippines\\University of the Philippines\\Data Science\\Employee Selection")
 
 # Function to set a maximum score
 cap_score <- function(x, cap) {
@@ -12,14 +11,14 @@ cap_score <- function(x, cap) {
 # Generate Applicant ID Number
 id <- paste0("Applicant #", 1:320)
 
-# Assign Sex Randomly
+# Assign Management Experience Randomly
 set.seed(0717)
-sex_random <- rbinom(320, 1, 0.5)
-sex <- ifelse(sex_random == 0, "Male", "Female") 
+management_random <- rbinom(320, 1, 0.5)
+management <- ifelse(management_random == 0, "manager", "non-manager") 
 
-# Personality Test Scores
+# Situational Judgment Test Scores
 set.seed(0717)
-personality <- round(runif(320, 60, 100))
+situational <- round(runif(320, 60, 100))
 
 # Number of Absences
 set.seed(0717)
@@ -61,7 +60,7 @@ correlated_vars_df <- correlated_vars_df %>%
 
 # Gather them all into one dataset
 applicant_scores <- cbind(
-  id, sex, personality, coding_viz, correlated_vars_df, absences
+  id, management, situational, coding_viz, correlated_vars_df, absences
 )
 
 applicant_final <- applicant_scores[1:300, ]
